@@ -122,7 +122,7 @@ def index():
     weather_response = requests.get(weather_url)
     weather_data = weather_response.json()
     temperature = weather_data.get('main', {}).get(
-        'temp', 'unknown temperature')
+        'temp', '32')
 
     response = {
         "client_ip": client_ip,
