@@ -43,7 +43,7 @@ def hello():
             "location": city,
             "greeting": f"Hello, {visitor_name}! The temperature is {temperature} degrees Celsius in {city}"
         })
-
+    
     except requests.RequestException as e:
         print(e)
         return jsonify({'error': 'Failed to fetch weather data'}), 500
